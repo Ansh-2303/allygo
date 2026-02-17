@@ -7,6 +7,7 @@ function About() {
         <h2>What is AllyGo?</h2>
 
         <p>
+          changes
           AllyGo is a student-first campus ecosystem platform designed to
           simplify student life by combining peer-to-peer academic help,
           skill-based micro-earning, and trusted campus services — all in one place.
