@@ -77,6 +77,7 @@
   background: url("/src/assets/hero-bg.jpg") center/cover no-repeat;
   z-index: -2;
    backdrop-filter: blur(2px);
+   background: rgba(0, 0, 0, 0.45);
 
 }
 
@@ -95,13 +96,17 @@
   margin-bottom: 20px;
 }
 
+.hero h1,
 .hero p {
-  max-width: 650px;
-  margin: auto;
-  margin-bottom: 30px;
-  color: var(--dark-gray);
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
 }
 
+.hero p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 20px auto 40px auto;
+}
 /* PROBLEM */
 .problem {
   background: var(--light-gray);
