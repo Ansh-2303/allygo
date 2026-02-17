@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
 :root {
   --orange: #ff6b00;
   --black: #111111;
@@ -22,6 +27,27 @@ section {
   padding: 100px 10%;
 }
 
-h1, h2, h3 {
-  font-weight: 600;
+h1 {
+  font-size: 3.2rem;
+  letter-spacing: -1px;
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 1.7;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

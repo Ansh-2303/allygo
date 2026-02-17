@@ -2,7 +2,7 @@
 
 function Services() {
   return (
-    <section className="services" id="services">
+    <section className="services fade-in" id="services">
       <div className="services-container">
         <h2>What AllyGo Provides</h2>
 

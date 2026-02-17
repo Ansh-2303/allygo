@@ -2,7 +2,7 @@
 
 function Internship() {
   return (
-    <section className="internship" id="internships">
+    <section className="internship fade-in" id="internships">
       <div className="internship-container">
         <h2>Build AllyGo With Us</h2>
 

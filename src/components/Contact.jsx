@@ -2,7 +2,7 @@
 
 function Contact() {
   return (
-    <section className="contact" id="contact">
+    <section className="contact fade-in" id="contact">
       <div className="contact-container">
         <h2>Connect With AllyGo</h2>
 

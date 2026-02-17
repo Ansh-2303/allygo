@@ -2,7 +2,8 @@
 
 function Hero() {
   return (
-    <section className="hero">
+    <section className="hero fade-in">
+      
       <div className="hero-content">
         <h1>
           AllyGo — Your Ally for <span>Student Life</span>

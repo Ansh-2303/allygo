@@ -2,7 +2,7 @@
 
 function About() {
   return (
-    <section className="about" id="about">
+    <section className="about fade-in">
       <div className="about-container">
         <h2>What is AllyGo?</h2>
 

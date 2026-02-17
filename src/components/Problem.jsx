@@ -2,7 +2,7 @@
 
 function Problem() {
   return (
-    <section className="problem">
+    <section className="problem fade-in">
       <div className="problem-container">
         <h2>Student Life Shouldn’t Be This Complicated</h2>
 
