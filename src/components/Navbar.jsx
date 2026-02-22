@@ -14,10 +14,20 @@ function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleClick = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+      setMenuOpen(false);
+    }
+  };
+
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
-      <div className="logo">
+      {/* Logo Click → Scroll Top */}
+      <div className="logo" onClick={() => handleClick("top")}>
         <img src={logo} alt="AllyGo Logo" />
+        <span className="logo-text">AllyGo</span>
       </div>
 
       <div
@@ -28,12 +38,17 @@ function Navbar() {
       </div>
 
       <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#internships">Internships</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li onClick={() => handleClick("about")}>About</li>
+        <li onClick={() => handleClick("services")}>Services</li>
+        <li onClick={() => handleClick("internships")}>Internships</li>
+        <li onClick={() => handleClick("contact")}>Contact</li>
         <li>
-          <button className="btn-orange">Join Early Access</button>
+          <button
+            className="btn-orange"
+            onClick={() => handleClick("internships")}
+          >
+            Join Early Access
+          </button>
         </li>
       </ul>
     </nav>

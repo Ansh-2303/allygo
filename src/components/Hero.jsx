@@ -2,7 +2,7 @@
 
 function Hero() {
   return (
-    <section className="hero fade-in">
+   <section id="top" className="hero fade-in">
       
       <div className="hero-content">
         <h1>
