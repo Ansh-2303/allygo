@@ -7,7 +7,7 @@ function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
+      setScrolled(window.scrollY > 40);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -17,12 +17,13 @@ function Navbar() {
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="logo">
-  <img src={logo} alt="AllyGo Logo" />
-</div><div className="logo">
-  Ally<span>Go</span>
-</div>
+        <img src={logo} alt="AllyGo Logo" />
+      </div>
 
-      <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+      <div
+        className="hamburger"
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
         ☰
       </div>
 
