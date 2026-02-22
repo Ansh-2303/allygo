@@ -1,5 +1,6 @@
 // src/components/About.jsx
 
+<section className="section about fade-in"></section>
 function About() {
   return (
     <section className="about fade-in">

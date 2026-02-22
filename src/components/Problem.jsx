@@ -1,5 +1,7 @@
 // src/components/Problem.jsx
 
+<section className="section problem fade-in"></section>
+
 function Problem() {
   return (
     <section className="problem fade-in">
