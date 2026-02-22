@@ -2,24 +2,34 @@
 
 function Internship() {
   return (
-    <section className="internship fade-in" id="internships">
+    <section className="section internship fade-in" id="internships">
       <div className="internship-container">
         <h2>Build AllyGo With Us</h2>
 
         <p>
-          We are building AllyGo with passionate students across campuses.
-          Join as an intern or campus ambassador and help shape the future
-          of student ecosystems.
+          We are building a trusted student ecosystem across campuses.
+          If you believe students deserve better systems for learning,
+          earning, and living — join us and help shape the future.
         </p>
 
         <div className="internship-buttons">
-          <button className="btn-orange">
+          <a
+            href="https://forms.gle/NhVJpu1Bgr33zX6e9"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-orange"
+          >
             Apply for Internship
-          </button>
+          </a>
 
-          <button className="btn-light">
+          <a
+            href="https://forms.gle/NhVJpu1Bgr33zX6e9"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-light"
+          >
             Campus Ambassador Program
-          </button>
+          </a>
         </div>
       </div>
     </section>
