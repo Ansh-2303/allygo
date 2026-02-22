@@ -1,9 +1,12 @@
-// src/components/Hero.jsx
+import heroBg from "../assets/hero-bg.jpg";
 
 function Hero() {
   return (
-   <section id="top" className="hero fade-in">
-      
+    <section
+      id="top"
+      className="hero fade-in"
+      style={{ backgroundImage: `url(${heroBg})` }}
+    >
       <div className="hero-content">
         <h1>
           AllyGo — Your Ally for <span>Student Life</span>
