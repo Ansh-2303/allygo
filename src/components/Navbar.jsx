@@ -25,10 +25,9 @@ function Navbar() {
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       {/* Logo Click → Scroll Top */}
-      <div className="logo" onClick={() => handleClick("top")}>
-        <img src={logo} alt="AllyGo Logo" />
-        <span className="logo-text">AllyGo</span>
-      </div>
+   <div className="logo" onClick={() => handleClick("top")}>
+  <img src={logo} alt="AllyGo Logo" />
+</div>
 
       <div
         className="hamburger"
