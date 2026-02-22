@@ -20,7 +20,7 @@ function Contact() {
           </a>
 
           <a
-            href="https://linkedin.com/company/YOUR_PAGE"
+            href="https://www.instagram.com/allygolimited/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -28,14 +28,14 @@ function Contact() {
           </a>
 
           <a
-            href="https://chat.whatsapp.com/YOUR_GROUP_LINK"
+            href="https://www.linkedin.com/company/allygo/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BMXLOUl%2BqT8%2Ba%2BDew%2F4rgBw%3D%3D"
             target="_blank"
             rel="noopener noreferrer"
           >
             WhatsApp Community
           </a>
 
-          <a href="mailto:contact@allygo.in">
+          <a href="mailto:admin@allygo.in">
             Email Us
           </a>
         </div>
