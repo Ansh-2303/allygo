@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 10%;
+  padding: 24px 10%;
   background: white;
   position: sticky;
   top: 0;
@@ -622,8 +622,14 @@
 
 }
 
-
-.logo img {
-  height: 40px;
+.logo {
+ font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
   cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.logo span {
+  color: var(--orange);
 }

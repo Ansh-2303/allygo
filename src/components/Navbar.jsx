@@ -18,6 +18,8 @@ function Navbar() {
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="logo">
   <img src={logo} alt="AllyGo Logo" />
+</div><div className="logo">
+  Ally<span>Go</span>
 </div>
 
       <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
