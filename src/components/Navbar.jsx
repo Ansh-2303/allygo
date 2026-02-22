@@ -1,9 +1,30 @@
-function Navbar() {
-  return (
-    <nav className="navbar">
-      <div className="logo">AllyGo</div>
+import { useState, useEffect } from "react";
+import logo from "../assets/logo.png";
 
-      <ul className="nav-links">
+function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
+      <div className="logo">
+  <img src={logo} alt="AllyGo Logo" />
+</div>
+
+      <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+        ☰
+      </div>
+
+      <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#internships">Internships</a></li>
